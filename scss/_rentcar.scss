@@ -1,0 +1,79 @@
+section{
+    .containerXl{
+        .rent__car-flet{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            .rent__car-head{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                .l__title{
+                    font-size: 12px ;
+                    color: $header-text-color;
+                }
+                b{
+                    font-size: 42px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 16px;
+                    color: $header-text-color;
+                }
+                .rentCar__search{
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $border-color;
+                    padding: 10px 6px;
+                    width: 220px;
+                    border-radius: 90px;
+                    input{
+                        width: 100%;
+                        flex: 1;
+                        border: 0;
+                        outline:none;
+                    }
+                    button{
+                        border: 0;
+                        background-color: $main-bg-color-btn;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        i{
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .rent__car-photo{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:750px) {
+    section{
+        .containerXl{
+            .rent__car-flet{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .rent__car-head{
+                    text-align: center;
+                    .rentCar__search{
+                        margin: 0 auto;
+                    }
+                }
+                .rent__car-photo{
+                    height: 20%;
+                }
+            }
+        }
+    }
+}
