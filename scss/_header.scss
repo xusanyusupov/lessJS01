@@ -96,7 +96,6 @@ header{
 
 @media (max-width: 1024px) {
     header{
-        border-bottom: 1px solid $border-color;
         nav{
             .containerXl{
                 .head__wrapper{
@@ -120,7 +119,6 @@ header{
 
 @media (max-width: 660px) {
     header{
-       border-bottom: 1px solid $border-color;
        nav{
         .containerXl{
             .head__wrapper{

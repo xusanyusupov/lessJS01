@@ -1,0 +1,48 @@
+.allmain{
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .support__wrapper{
+            width: 900px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            border: 1px solid $border-color;
+            .support__item{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                padding: 50px;
+                p,
+                b{
+                    color: $header-text-color;
+                }
+                .supportDiv{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+                input{
+                    width: 100%;
+                    padding: 8px 10px;
+                    border: 1px solid $border-color;
+                    outline: none;
+                }
+                textarea{
+                    border: 1px solid $border-color;
+                    width: 100%;
+                    height: 250px;
+                    resize: none;
+                    outline: none;
+                }
+            }
+        }
+}
+
+@media (max-width:860px) {
+    .allmain{
+        .support__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+}

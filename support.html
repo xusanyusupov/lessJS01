@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontlar uchun  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Fontlar uchun -->
+</head>
+
+<body>
+    <!-- header start  -->
+    <header id="head">
+        <nav>
+            <div class="containerXl">
+                <div class="head__wrapper">
+                    <div class="head__logo">
+                       <a href="index.html"> <img src="./assets/img/Head  logo.svg" alt=""></a>
+                        <select>
+                            <option>Travelers</option>
+                            <option>Rent Car</option>
+                            <option>Price</option>
+                            <option>Car info</option>
+                        </select>
+                    </div>
+
+                    <div class="head__collection">
+                        <ul>
+                            <div class="media2XL">
+                                <i onclick="hidemedia2XL()" class="fa-solid fa-xmark"></i>
+                                <li class="media-2xl">
+                                    <a href="#">
+                                        <span>
+                                            <i class="fa-solid fa-phone"></i>
+                                            Support
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="media-2xl">
+                                    <a href="#">
+                                        <span>
+                                            <i class="fa-solid fa-globe"></i>
+                                            Language
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="list.html">
+                                        <span>
+                                            <i class="fa-solid fa-list"></i>
+                                            List your property
+                                        </span>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="mediaXL">
+                                <li>
+                                    <i onclick="showmedia2XL()" class="fa-solid fa-bars menu"></i>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-regular fa-bell"></i></a>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/avatar.png" alt="">
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end  -->
+    <main class="allmain">
+            <div class="support__wrapper">
+                <div class="support__item">
+                        <h2>Get in touch</h2>
+                        <div class="supportDiv">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <input type="text" placeholder="Subject">
+                        <p>write about your problems and ideas &#8595;</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="support__item">
+                    <b>Phone Number: +998 90 123 45 67</b>
+                    <b>Email: example@example.com</b>
+                    <b>Subject: Regarding New Project Proposal</b>
+                    <b>Dear Client</b>
+                    <p> I would like to reach out to you regarding a new project proposal. Our company, [FLEET RENT CAR], has extensive experience in implementing innovative approaches and advanced technologies in new projects. Our primary goal is to provide optimal solutions for our clients and help them achieve their </p>
+                        <div>
+                            <b>Father name</b>
+                            <input type="text" placeholder="Father name">
+                        </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="containerXl">
+            <!-- flex uchun  -->
+            <div class="footer__wrapper">
+                <div class="footer__links img">
+                    <img src="./assets/img/Head  logo.svg" alt="">
+                </div>
+                <div class="footer__links">
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                </div>
+                <div class="footer__links">
+                    <a href="#">What We Do</a>
+                    <a href="#">Press</a>
+                </div>
+                <div class="footer__links">
+                    <a href="#">Jobs</a>
+                    <a href="#">Download</a>
+                </div>
+                <div class="footer__links-btn-wrapper">
+                    <a href="#">Join our community 🔥</a>
+                    <div class="footer__btn">
+                        <input type="email" required="" placeholder="Enter your email">
+                        <button>></button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2021 UI8 LLC. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // slide popper uchun start
+        let media2XL = document.querySelector('.media2XL')
+        function showmedia2XL() {
+            media2XL.style.left = '0'
+        }
+        function hidemedia2XL() {
+            media2XL.style.left = '-350px'
+        }
+        // slide popper uchun end
+    </script>
+
+</body>
+
+</html>

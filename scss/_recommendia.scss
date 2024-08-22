@@ -1,0 +1,85 @@
+#rec{
+    margin-top: 500px;
+    .containerXl{
+        .rec__title{
+            text-align: center;
+            b{
+                font-size: 45px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 24px;
+                color: $header-text-color;
+                i{
+                    color: green;
+                }
+            }
+        }
+        .rec__wrapper{
+            margin-top: 65px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            overflow-y: none;
+            grid-gap: 32px;
+            overflow-x: scroll;
+            .rec__card{
+                margin: 30px 0;
+                width: 256px;
+                padding: 32px 32px;
+                display: flex;
+                gap: 75px;
+                flex-direction: column;
+                align-items: flex-start;
+                border: 1px solid $border-color;
+                border-radius: 24px;
+                transition: .5s ease;
+                cursor: pointer;
+                &:hover{
+                    transform: translateY(-20px);
+                    background-color: $border-color;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    i{
+                        font-size: 30px;
+                        color: $header-text-color;
+                    }
+                    p{
+                        color: $header-text-color;
+                    }
+                }
+            }
+
+        }
+        .rec__wrapper::-webkit-scrollbar {
+            height: 3px;
+            background-color: #f1f1f1;
+        }
+        
+        .rec__wrapper::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+        
+        .rec__wrapper::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+        .control__btn{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            button{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}

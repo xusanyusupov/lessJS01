@@ -1,0 +1,97 @@
+#services{
+    margin-top: 100px;
+    .containerXl{
+        .services__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            p{
+                font-size: 12px;
+                color: $header-text-color;
+            }
+            b{
+                font-size: 45px;
+                font-weight: 700;
+            }
+            button{
+                padding: 16px 24px;
+                background-color: $main-bg-color-btn;
+                transition: .5s ease;
+                border: 0;
+                border-radius: 90px;
+                color: #fff;
+                cursor: pointer;
+                &:hover{
+                    background-color: #2f54af;
+                }
+            }
+        }
+        .services__card-wrapper{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 24px;
+
+            .services__card{
+                margin-top: 90px;
+                border-radius: 24px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+                background-color: #F4F5F6;
+                padding: 64px 32px; 
+                cursor: pointer;
+                transition: .5s ease ;
+                &:hover{
+                    transform: translateY(-20px);
+                    box-shadow: 0 0 20px $header-text-color;
+                }
+              
+                b{
+                    font-size: 18px;
+                }
+                p{
+                    color: $header-text-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    #services{
+        .containerXl{
+            .services__card-wrapper{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}
+@media (max-width: 715px) {
+    #services{
+        .containerXl{
+            .services__card-wrapper{
+                grid-template-columns: 1fr;
+                width: 80%;
+                margin: 0 auto;
+                .services__card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 350px) {
+    #services{
+        .containerXl{
+            .services__title{
+                text-align: center;
+            }
+        }
+    }
+}

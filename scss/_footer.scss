@@ -1,0 +1,90 @@
+footer{
+    margin-top: 200px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    border-top: 1px solid $border-color;
+    .containerXl{
+        .footer__wrapper{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-gap: 35px;
+            .footer__links{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                a{
+                    color: $header-text-color;
+                }
+            }
+            .footer__links-btn-wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                a{
+                    color: $header-text-color;
+                }
+                .footer__btn{
+                    width: 228px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $border-color;
+                    border-radius: 24px;
+                    padding: 4px 4px;
+                    button{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: $main-bg-color-btn;
+                        color: #ffff;
+                        cursor: pointer;
+                        transition: .5s ease ;
+                        &:hover{
+                            background-color: #2f54af;
+                        }
+                    }
+                    button,
+                    input{
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .copyright{
+            margin-top: 50px;
+            width: 100%;
+            border-top: 1px solid $border-color;
+            padding: 30px;
+
+        }
+    }
+}
+
+@media (max-width:900px) {
+    footer{
+        .containerXl{
+            .footer__wrapper{
+                grid-template-columns: repeat(2,1fr);
+                .footer__links.img{
+                        display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width:400px) {
+    footer{
+        .containerXl{
+            .footer__wrapper{
+                grid-template-columns: 1fr;
+                text-align: center;
+                .footer__links.img{
+                        display: none;
+                }
+                .footer__links-btn-wrapper{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
